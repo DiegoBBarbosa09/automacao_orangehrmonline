@@ -32,15 +32,16 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_linux64.deb
-          sudo apt install ./google-chrome-stable_current_linux64.deb
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install ./google-chrome-stable_current_amd64.deb
+
+      - name: Install chromedriver-manager
+        run: poetry add chromedriver-autoinstaller
 
       - name: Install ChromeDriver
         run: |
-          wget https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
-          unzip chromedriver_linux64.zip
-          sudo mv chromedriver /usr/local/bin/
-
+          python -m chromedriver_autoinstaller
+          
       - name: Execute Tests
         id: execute_test
         run: poetry run robot -d ./reports .
