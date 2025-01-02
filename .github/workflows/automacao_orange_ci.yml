@@ -41,7 +41,7 @@ jobs:
       - name: Install ChromeDriver
         run: |
           python -m chromedriver_autoinstaller
-          
+
       - name: Execute Tests
         id: execute_test
         run: poetry run robot -d ./reports .
@@ -74,7 +74,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Download reports
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: reports
 
