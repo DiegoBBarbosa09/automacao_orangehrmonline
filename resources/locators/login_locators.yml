@@ -1,0 +1,4 @@
+page_login: //h5[contains(.,'Login')]
+input_user: //input[@name="username"]
+input_password: //input[@name="password"] 
+button_login: //button[@type="submit"]

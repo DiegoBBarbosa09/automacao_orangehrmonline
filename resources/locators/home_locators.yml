@@ -1,0 +1,4 @@
+dashboard:  //h6[contains(.,'Dashboard')]
+avatar:     //i[contains(@class,'oxd-icon bi-caret-down-fill oxd-userdropdown-icon')]
+logout:     //a[contains(.,'Logout')]
+menu_admin: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span

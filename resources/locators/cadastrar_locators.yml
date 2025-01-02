@@ -1,0 +1,20 @@
+add_user: //button[@type='button'][contains(.,'Add')]
+pagina_add_user:  //h6[@class='oxd-text oxd-text--h6 orangehrm-main-title'][contains(.,'Add User')]
+pagina_system_user: //h5[@class='oxd-text oxd-text--h5 oxd-table-filter-title'][contains(.,'System Users')]
+user_role:  (//div[contains(@class,'oxd-select-text-input')])[1]
+role_select: //div[@role="listbox"][contains(.,'Admin')]
+employee_name:  //input[contains(@placeholder,'Type for hints...')]
+select_employee_name: //div[@role="listbox"][contains(.,'Arnaldo Ferreira Junior')]
+status: (//div[contains(@class,'oxd-select-text-input')])[2]
+select_status:  //div[@role="listbox"][contains(.,'Enabled')]
+input__create_username: //label[@class='oxd-label oxd-input-field-required'][contains(.,'Username')]//..//..//div//input
+input_create_password: (//input[@type="password"])  
+input_confirm_password: //div[@class='oxd-grid-item oxd-grid-item--gutters']//div//div//input[@type="password"]
+button_save:  //button[@type='submit'][contains(.,'Save')]
+records_found:  //div[@class="orangehrm-paper-container"]
+
+buscar_username:  (//input[contains(@class,'oxd-input oxd-input--active')])[2]
+search: //button[@type='submit'][contains(.,'Search')]
+
+deletar_usuario:  (//button[contains(@class,'oxd-icon-button oxd-table-cell-action-space')])[1]
+modal_deletar:  //button[@type='button'][contains(.,'Yes, Delete')]

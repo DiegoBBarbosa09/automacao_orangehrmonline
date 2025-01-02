@@ -1,0 +1,11 @@
+pim:  //a[@class='oxd-main-menu-item'][contains(.,'PIM')]
+add_employee: //li[@class='oxd-topbar-body-nav-tab'][contains(.,'Add Employee')]
+add:  //button[@type='button'][contains(.,'Add')]
+input_first_name: //input[@placeholder="First Name"]
+input_middle_name:  //input[@placeholder="Middle Name"]
+input_last_name:  //input[@placeholder="Last Name"]
+save_employee:  //button[@type='submit'][contains(.,'Save')]
+
+fisrt_name: Arnaldo
+middle_name:  Ferreira
+last_name: Junior
