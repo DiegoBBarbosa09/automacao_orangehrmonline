@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Suite de testes de Login no site orangehrmlive
-Resource         ../resources/pages/Login_resources.robot
+Resource         ../resources/pages/login_resources.robot
 Resource         ../resources/utils/web.resource
 
 Test Setup       Abrir Navegador

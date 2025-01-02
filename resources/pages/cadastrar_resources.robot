@@ -1,7 +1,7 @@
 *** Settings ***
 Library          String
 
-Resource         Login_resources.robot
+Resource         login_resources.robot
 Resource         add_funcionario_page.robot
 Variables        ../locators/home_locators.yml
 Variables        ../locators/cadastrar_locators.yml
